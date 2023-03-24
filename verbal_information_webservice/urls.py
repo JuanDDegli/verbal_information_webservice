@@ -36,9 +36,9 @@ urlpatterns = [
         name="VerbalInformation_destroy",
     ),
     path(
-        "api/v1/Verbal/Informations/list",
+        "api/v1/verbal/informations/list",
         VerbalInformationListViewSet.as_view(),
-        name="VerbalInformation_list",
+        name="verbal_information_list",
     ),
     path("api/v1/request/", RequestTestAPI.as_view(), name="VerbalInformation_test"),
     path(

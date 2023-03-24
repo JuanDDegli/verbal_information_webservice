@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-x(zkvek@q7uup=_a+tnh1751d%q8$v877g2q8kb!))npr#2xzn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -95,15 +95,15 @@ SWAGGER_SETTINGS = {
 }
 
 # CONFIGURATION DJANGO-REST-FRAMEWORK
-REST_FRAMEWORK = {
-    "UNAUTHENTICATED_USER": None,
-    "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
-    "DEFAULT_AUTHENTICATION_CLASSES": [
-        "common.rest_framework.keycloak_authentication.KeycloakAuthentication"
-    ],
-    "PAGE_SIZE": 100,
-    "ORDERING_PARAM": "order",
-}
+# REST_FRAMEWORK = {
+#     "UNAUTHENTICATED_USER": None,
+#     "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
+#     "DEFAULT_AUTHENTICATION_CLASSES": [
+#         "common.rest_framework.keycloak_authentication.KeycloakAuthentication"
+#     ],
+#     "PAGE_SIZE": 100,
+#     "ORDERING_PARAM": "order",
+# }
 
 
 # CONFIGURATION KEYCLOAK
