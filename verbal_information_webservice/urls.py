@@ -16,24 +16,24 @@ from .docs import schema_view
 
 urlpatterns = [
     path(
-        "api/v1/Verbal/Informations/create",
+        "api/v1/verbal/informations/create",
         VerbalInformationCreateViewSet.as_view(),
-        name="VirtualInformation_create",
+        name="verbal_information_create",
     ),
     path(
-        "api/v1/Verbal/Informations/<int:pk>/retrieve",
+        "api/v1/verbal/informations/<int:pk>/retrieve",
         VerbalInformationRetrieveUpdateDeleteViewSet.as_view(),
-        name="VerbalInformation_retrieve",
+        name="verbal_information_retrieve",
     ),
     path(
-        "api/v1/Verbal/Informations/<int:pk>/update",
+        "api/v1/verbal/informations/<int:pk>/update",
         VerbalInformationRetrieveUpdateDeleteViewSet.as_view(),
-        name="VerbalInformation_update",
+        name="verbal_information_update",
     ),
     path(
-        "api/v1/Verbal/Informations/<int:pk>/destroy",
+        "api/v1/verbal/informations/<int:pk>/destroy",
         VerbalInformationRetrieveUpdateDeleteViewSet.as_view(),
-        name="VerbalInformation_destroy",
+        name="verbal_information_destroy",
     ),
     path(
         "api/v1/verbal/informations/list",
