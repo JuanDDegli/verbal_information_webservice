@@ -1,7 +1,16 @@
-CREATE TABLE VirtualInformation (
+CREATE TABLE verbal_informations (
     id INT NOT NULL AUTO_INCREMENT,
-    id_company INT NOT NULL,
-    name_VirtualInformation VARCHAR(100) NOT NULL,  
-    enabled VARCHAR (3) NOT NULL,
-    CONSTRAINT pk_brand primary key (id)
+    company_id INT NOT NULL,  
+    cod_assignments INT NOT NULL,   
+    cod_usefulness INT NOT NULL,
+    cod_request_date DATE,
+    cod_delivery_date DATE,
+    cod_requester VARCHAR(60),
+    cod_rg VARCHAR(20),
+    cod_cpf VARCHAR(20),
+    cod_delivery_name VARCHAR (60),
+    cod_delivery_rg VARCHAR (20),
+    cod_delivery_cpf VARCHAR (20),
+    cod_subject VARCHAR (200),
+    CONSTRAINT pk_verbal_informations primary key (id),
 );
