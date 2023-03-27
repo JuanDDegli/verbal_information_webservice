@@ -102,11 +102,18 @@ The routers of CRUD, is necessary send token of autentication in headers. Token 
 
 `GET api/v1/verbal_information/list`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjM5Nzc5LCJqdGkiOiJjYmU4NTAwMDZmMTg0NjkzODdiMWIyYmVkZTNkODg3MSIsInVzZXJfaWQiOjF9.McY2lLiorIK3SVNtEGKN9rQFtOm_xP7EVVXVcXAR110" --request GET http://localhost:5060/api/v1/verbal_information/list
+curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjM5Nzc5LCJqdGkiOiJjYmU4NTAwMDZmMTg0NjkzODdiMWIyYmVkZTNkODg3MSIsInVzZXJfaWQiOjF9.McY2lLiorIK3SVNtEGKN9rQFtOm_xP7EVVXVcXAR110" --request GET http://localhost:6006/api/v1/verbal/informations/list
 
 ### Response
 
-<<< Preencher com o JSON de response que será recebido ao chamar o método na api>>>
+"id": 14,
+"company_id": 12,
+    "cod_assignments": 0,
+    "cod_usefulness": 0,
+    "cod_request_date": 0000-00-00,
+    "cod_delivery_date": 0000-00-00,
+    "cod_requester": 0,
+    ...
 
 ## Create a new verbal_information
 
@@ -114,35 +121,51 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 `POST api/v1/verbal_information/create`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQwOTAxLCJqdGkiOiI4MjJkNDc5NDRmZmU0Yzc3OTE1MTA4ODAwNzQzOGJjMSIsInVzZXJfaWQiOjF9.KXZcekm0kLOQEN4nqsJQ-LMfF5PWbs6g_9BV4CiEiO8" --header "Content-Type: application/json" --request POST --data 
+curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQwOTAxLCJqdGkiOiI4MjJkNDc5NDRmZmU0Yzc3OTE1MTA4ODAwNzQzOGJjMSIsInVzZXJfaWQiOjF9.KXZcekm0kLOQEN4nqsJQ-LMfF5PWbs6g_9BV4CiEiO8" --header "Content-Type: application/json" --request POST --data " Json available in redoc " http://localhost:6006/api/v1/verbal/informations/create
 
 ### Response
 
-<<< Preencher com o JSON de response que será recebido ao chamar o método na api>>>
+    "id": 14,
+    "company_id": 12,
+    "cod_assignments": 0,
+    "cod_usefulness": 0,
+    "cod_request_date": 0000-00-00,
+    "cod_delivery_date": 0000-00-00,
+    "cod_requester": 0,
+    ...
 
-## Get a specific verbal_information
+## Get a specific verbal information
 
 ### Request
 
-`GET 'api/v1/verbal_information/<int:pk>/retrieve`
+`GET 'api/v1/verbal/informations/<int:pk>/retrieve`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQxODU0LCJqdGkiOiJkYjA0ZDcyZWFiMWU0NzBhYTA2NWRmYzVkODhhMWM0ZiIsInVzZXJfaWQiOjF9.DsXceg-MxMWAO0X7IcjHt_6VkDiif2qwFCMIJPZt758" --header "Content-Type: application/json" --request GET http://localhost:5060/api/v1/verbal_information/list
+curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQxODU0LCJqdGkiOiJkYjA0ZDcyZWFiMWU0NzBhYTA2NWRmYzVkODhhMWM0ZiIsInVzZXJfaWQiOjF9.DsXceg-MxMWAO0X7IcjHt_6VkDiif2qwFCMIJPZt758" --header "Content-Type: application/json" --request GET http://localhost:5060/api/v1/verbal_information/14/retrieve
 
 ### Response
 
-<<< Preencher com o JSON de response que será recebido ao chamar o método na api>>>
+"id": 14,
+"company_id": 12,
+    "cod_assignments": 0,
+    "cod_usefulness": 0,
+    "cod_request_date": 0000-00-00,
+    "cod_delivery_date": 0000-00-00,
+    "cod_requester": 0,
+    ...
 
 ## Get a non-existent verbal_information
 
 ### Request
 
-`GET 'api/v1/verbal_information/<int:pk>/retrieve`
+`GET 'api/v1/request`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQxODU0LCJqdGkiOiJkYjA0ZDcyZWFiMWU0NzBhYTA2NWRmYzVkODhhMWM0ZiIsInVzZXJfaWQiOjF9.DsXceg-MxMWAO0X7IcjHt_6VkDiif2qwFCMIJPZt758" --header "Content-Type: application/json" --request GET http://localhost:8000/api/v1/verbal_information/20/
+--request GET http://localhost:6006/api/v1/request/
 
 ### Response
 
-{"detail":"Not found."}
+{
+    "API": "OK"
+}
 
 ## Get changed verbal_information
 
@@ -150,11 +173,19 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 `PUT api/v1/verbal_information/<int:pk>/update`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQzMzA3LCJqdGkiOiJmOTMxYzUxZWI1NjQ0NTZjYjJjZjU4MzNhYzQ1MzE2MyIsInVzZXJfaWQiOjF9.IJBCt0lpgvK2bI7XdKlG51D8jVONhT0ASzHZt6jQL-0" --header  http://localhost:6006/api/v1/verbal_information/<int:pk>/
+curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQzMzA3LCJqdGkiOiJmOTMxYzUxZWI1NjQ0NTZjYjJjZjU4MzNhYzQ1MzE2MyIsInVzZXJfaWQiOjF9.IJBCt0lpgvK2bI7XdKlG51D8jVONhT0ASzHZt6jQL-0" --header  http://localhost:6006/api/v1/verbal_information/14/update
 
 ### Response
 
-<<< Preencher com o JSON de response que será recebido ao chamar o método na api>>>
+"id": 14,
+"company_id": 12,
+    "cod_assignments": 1,
+    "cod_usefulness": 1,
+    "cod_request_date": 1111-11-11,
+    "cod_delivery_date": 1111-11-11,
+    "cod_requester": 1,
+    ...
+
 
 ## Delete a verbal_information
 
@@ -162,7 +193,7 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 `DELETE api/v1/verbal_information/<int:pk>/destroy`
 
-curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQyNjQ1LCJqdGkiOiJiOWEzMTJiN2I3YmE0YWVhOTM3MzFkM2NiZDY2NzY2OCIsInVzZXJfaWQiOjF9.vUEDhJuU7xNPgPJayS_nAb-mpkxAQSCAhzK49yNzANI" --header "Content-Type: application/json" --request DELETE http://localhost:6006/api/v1/verbal_information/<int:pk>/
+curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQyNjQ1LCJqdGkiOiJiOWEzMTJiN2I3YmE0YWVhOTM3MzFkM2NiZDY2NzY2OCIsInVzZXJfaWQiOjF9.vUEDhJuU7xNPgPJayS_nAb-mpkxAQSCAhzK49yNzANI" --header "Content-Type: application/json" --request DELETE http://localhost:6006/api/v1/verbal_information/14/destroy
 
 ### Response
 
