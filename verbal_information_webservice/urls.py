@@ -36,7 +36,7 @@ urlpatterns = [
         name="verbal_information_destroy",
     ),
     path(
-        "api/v1/verbal/informations/list",
+        "api/v1/verbal/informations/<int:company_id>/list",
         VerbalInformationListViewSet.as_view(),
         name="verbal_information_list",
     ),
