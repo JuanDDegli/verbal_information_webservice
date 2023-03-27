@@ -100,7 +100,7 @@ The routers of CRUD, is necessary send token of autentication in headers. Token 
 
 ### Request
 git
-`GET api/v1/verbal/information/list`
+`GET api/v1/verbal/informations/<int:company_id>/list`
 
 curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjM5Nzc5LCJqdGkiOiJjYmU4NTAwMDZmMTg0NjkzODdiMWIyYmVkZTNkODg3MSIsInVzZXJfaWQiOjF9.McY2lLiorIK3SVNtEGKN9rQFtOm_xP7EVVXVcXAR110" --request GET http://localhost:6006/api/v1/verbal/informations/list
 
@@ -119,7 +119,7 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Request
 
-`POST api/v1/verbal/information/create`
+`POST api/v1/verbal/informations/create`
 
 curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQwOTAxLCJqdGkiOiI4MjJkNDc5NDRmZmU0Yzc3OTE1MTA4ODAwNzQzOGJjMSIsInVzZXJfaWQiOjF9.KXZcekm0kLOQEN4nqsJQ-LMfF5PWbs6g_9BV4CiEiO8" --header "Content-Type: application/json" --request POST --data " Json available in redoc " http://localhost:6006/api/v1/verbal/informations/create
 
@@ -171,7 +171,7 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Request
 
-`PUT api/v1/verbal/information/<int:pk>/update`
+`PUT api/v1/verbal/informations/<int:pk>/update`
 
 curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQzMzA3LCJqdGkiOiJmOTMxYzUxZWI1NjQ0NTZjYjJjZjU4MzNhYzQ1MzE2MyIsInVzZXJfaWQiOjF9.IJBCt0lpgvK2bI7XdKlG51D8jVONhT0ASzHZt6jQL-0" --header  http://localhost:6006/api/v1/verbal_information/14/update
 
@@ -191,7 +191,7 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Request
 
-`DELETE api/v1/verbal/information/<int:pk>/destroy`
+`DELETE api/v1/verbal/informations/<int:pk>/destroy`
 
 curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMjQyNjQ1LCJqdGkiOiJiOWEzMTJiN2I3YmE0YWVhOTM3MzFkM2NiZDY2NzY2OCIsInVzZXJfaWQiOjF9.vUEDhJuU7xNPgPJayS_nAb-mpkxAQSCAhzK49yNzANI" --header "Content-Type: application/json" --request DELETE http://localhost:6006/api/v1/verbal_information/14/destroy
 
