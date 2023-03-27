@@ -106,8 +106,8 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Response
 
-"id": 14,
-"company_id": 12,
+    "id": 14,
+    "company_id": 12,
     "cod_assignments": 0,
     "cod_usefulness": 0,
     "cod_request_date": 0000-00-00,
@@ -144,8 +144,8 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Response
 
-"id": 14,
-"company_id": 12,
+    "id": 14,
+    "company_id": 12,
     "cod_assignments": 0,
     "cod_usefulness": 0,
     "cod_request_date": 0000-00-00,
@@ -177,8 +177,8 @@ curl --header "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2
 
 ### Response
 
-"id": 14,
-"company_id": 12,
+    "id": 14,
+    "company_id": 12,
     "cod_assignments": 1,
     "cod_usefulness": 1,
     "cod_request_date": 1111-11-11,
