@@ -43,7 +43,7 @@ the project was developer with the technologies:
 ## 🐳 Development enviroment
 
 ```
-docker build -t verbal_information-workservice -f Dockerfile.dev --build-arg(...) .
+docker build -t verbal_information-workservice -f Dockerfile.dev .
 ```
 
 ```
