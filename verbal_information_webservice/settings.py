@@ -61,8 +61,8 @@ CORS_ALLOW_HEADERS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://brand-dev.camposdevelopers.com.br",
-    "https://brand-dev.camposdevelopers.com.br",
+    "http://verbal_information-dev.camposdevelopers.com.br",
+    "https://verbal_informations-dev.camposdevelopers.com.br",
     "https://frontend-dev.camposdevelopers.com.br",
     "http://frontend-dev.camposdevelopers.com.br",
 ]
@@ -128,30 +128,30 @@ SWAGGER_SETTINGS = {
 
 
 # CONFIGURATION KEYCLOAK
-KEYCLOAK_PUBLIC_KEY = os.environ.get("KEYCLOAK_PUBLIC_KEY")
+# KEYCLOAK_PUBLIC_KEY = os.environ.get("KEYCLOAK_PUBLIC_KEY")
 
-KEYCLOAK_FORMAT_PUBLIC_KEY = """-----BEGIN PUBLIC KEY-----
-{}
------END PUBLIC KEY-----"""
+# KEYCLOAK_FORMAT_PUBLIC_KEY = """-----BEGIN PUBLIC KEY-----
+# {}
+# -----END PUBLIC KEY-----"""
 
-KEYCLOAK_SERVER_URL = os.environ.get("KEYCLOAK_SERVER_URL")
-KEYCLOAK_REALM = os.environ.get("KEYCLOAK_REALM")
-KEYCLOAK_CLIENT_ID = os.environ.get("KEYCLOAK_CLIENT_ID")
-KEYCLOAK_CLIENT_SECRET_KEY = os.environ.get("KEYCLOAK_CLIENT_SECRET_KEY")
+# KEYCLOAK_SERVER_URL = os.environ.get("KEYCLOAK_SERVER_URL")
+# KEYCLOAK_REALM = os.environ.get("KEYCLOAK_REALM")
+# KEYCLOAK_CLIENT_ID = os.environ.get("KEYCLOAK_CLIENT_ID")
+# KEYCLOAK_CLIENT_SECRET_KEY = os.environ.get("KEYCLOAK_CLIENT_SECRET_KEY")
 
-KEYCLOAK_CLIENT_PUBLIC_KEY = os.environ.get(
-    "KEYCLOAK_CLIENT_PUBLIC_KEY", KEYCLOAK_PUBLIC_KEY
-)
+# KEYCLOAK_CLIENT_PUBLIC_KEY = os.environ.get(
+#     "KEYCLOAK_CLIENT_PUBLIC_KEY", KEYCLOAK_PUBLIC_KEY
+# )
 
-KEYCLOAK_CONFIG = {
-    "KEYCLOAK_SERVER_URL": KEYCLOAK_SERVER_URL,
-    "KEYCLOAK_REALM": KEYCLOAK_REALM,
-    "KEYCLOAK_CLIENT_ID": KEYCLOAK_CLIENT_ID,
-    "KEYCLOAK_CLIENT_SECRET_KEY": KEYCLOAK_CLIENT_SECRET_KEY,
-    "KEYCLOAK_CLIENT_PUBLIC_KEY": KEYCLOAK_FORMAT_PUBLIC_KEY.format(
-        KEYCLOAK_CLIENT_PUBLIC_KEY
-    ),
-}
+# KEYCLOAK_CONFIG = {
+#     "KEYCLOAK_SERVER_URL": KEYCLOAK_SERVER_URL,
+#     "KEYCLOAK_REALM": KEYCLOAK_REALM,
+#     "KEYCLOAK_CLIENT_ID": KEYCLOAK_CLIENT_ID,
+#     "KEYCLOAK_CLIENT_SECRET_KEY": KEYCLOAK_CLIENT_SECRET_KEY,
+#     "KEYCLOAK_CLIENT_PUBLIC_KEY": KEYCLOAK_FORMAT_PUBLIC_KEY.format(
+#         KEYCLOAK_CLIENT_PUBLIC_KEY
+#     ),
+# }
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
